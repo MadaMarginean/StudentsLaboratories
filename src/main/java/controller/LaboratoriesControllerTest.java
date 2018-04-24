@@ -78,12 +78,12 @@ public class LaboratoriesControllerTest extends TestCase {
         assertEquals(r1,true);
 
         //group
-        Student s2=new Student("aaaa2222","Arimie Andreea",1090);
+        Student s2=new Student("aaaa223","Arimie Andreea",1090);
         boolean r2=ctrl.saveStudent(s2);
         assertEquals(r2,false);
 
         //regNr
-        Student s3=new Student("aaaa222","Arimie Andreea",3);
+        Student s3=new Student("aaaa223","Arimie Andreea",3);
         boolean r3=ctrl.saveStudent(s3);
         assertEquals(r3,false);
 
@@ -93,7 +93,7 @@ public class LaboratoriesControllerTest extends TestCase {
         assertEquals(r4,false);
 
         //regNr empty
-        Student s5=new Student("","Arimie ",3);
+        Student s5=new Student("aj99","Arimie ",3);
         boolean r5=ctrl.saveStudent(s5);
         assertEquals(r5,false);
 
